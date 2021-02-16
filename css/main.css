@@ -1,0 +1,163 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  color: #323232;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+h4 {
+  font-size: 18px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+p {
+  color: #f2f2f2;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(../img/background.jpg) no-repeat center top/ cover;
+  height: 100vh;
+}
+.header:before {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid #a1a1a1;
+  opacity: 0.5;
+  position: absolute;
+  top: 100px;
+}
+
+.nav {
+  padding: 40px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-item a {
+  margin-right: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  position: relative;
+}
+.nav-item-last a {
+  margin-right: 0;
+}
+
+.nav a:hover:before {
+  content: "";
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 57px;
+}
+
+.nav-item a:before {
+}
+/* .line {
+  width: 100%;
+  border-bottom: 1px solid #a1a1a1;
+  opacity: 0.5;
+} */
+
+.offer {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 220px;
+  width: 829px;
+}
+
+.offer p {
+  font-weight: 500;
+}
+.offer h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.offer a {
+  background: #4985ff;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  color: #fff;
+  padding: 15px 36px;
+  margin-top: 50px;
+}
+.offer a:hover {
+  background: #4e81e6;
+}
+
+/* section services */
+
+.services {
+  margin-top: 110px;
+  text-align: center;
+}
+.services h2 {
+  width: 739px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.offer-text {
+  width: 730px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.services p {
+  color: #999999;
+}
+
+.services ul li p {
+  font-size: 14px;
+}
+.list {
+  display: flex;
+}
+.list__item {
+  display: flex;
+}
+
+.list__item:after {
+  content: "";
+  border: 1px solid #4985ff;
+  border-radius: 50%;
+  padding: 25px;
+}
+.list__item:before {
+  content: "";
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  padding: 35px;
+}
