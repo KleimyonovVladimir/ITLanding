@@ -47,7 +47,7 @@ p {
 }
 
 .header {
-  background: url(../img/background.jpg) no-repeat center top/ cover;
+  background: url(../img/background.jpg) no-repeat center top/ cover fixed;
   height: 100vh;
 }
 .header:before {
@@ -94,9 +94,14 @@ p {
 
 .offer {
   text-align: center;
-  margin: 0 auto;
-  margin-top: 220px;
+
   width: 829px;
+  position: absolute;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -415px;
+  margin-top: -117px;
 }
 
 .offer p {
