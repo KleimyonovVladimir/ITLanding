@@ -39,7 +39,7 @@ li {
 p {
   margin: 0;
   padding: 0;
-  color: #f2f2f2;
+  color: #999;
   line-height: 25px;
 }
 
@@ -99,6 +99,7 @@ p {
 
 .offer p {
   font-weight: 500;
+  color: #fff;
 }
 .offer h1 {
   color: #fff;
@@ -259,17 +260,17 @@ p {
   z-index: -1;
 }
 
-.our-project {
+.our-work {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 100px;
 }
-.our-project h2 {
+.our-work h2 {
   color: #fff;
   width: 540px;
 }
-.our-project a {
+.our-work a {
   height: fit-content;
 }
 .more-list {
@@ -296,4 +297,27 @@ p {
   width: 1110px;
   position: absolute;
   bottom: -85px;
+}
+/* our-project section */
+.our-project {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+.our-project-list {
+  display: flex;
+  justify-content: space-between;
+}
+.our-project h2 {
+  color: #000;
+  display: inline-block;
+}
+.our-project p {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  width: 730px;
+  margin: 0 auto;
+}
+.our-project a {
+  margin-top: 100px;
 }
