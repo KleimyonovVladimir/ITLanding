@@ -418,3 +418,34 @@ p {
 .mailing__under-form-text {
   margin-top: 35px;
 }
+/* footer */
+.footer {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.footer-list a {
+  color: #999;
+}
+.footer-list__internal-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 27px;
+}
+.footer-list__internal-item_last {
+  padding-bottom: 0;
+}
+.footer-list__item h4 {
+  padding-bottom: 35px;
+}
+.footer-list__internal-item img {
+  padding-right: 15px;
+}
+.label {
+  padding-top: 115px;
+  text-align: center;
+}
