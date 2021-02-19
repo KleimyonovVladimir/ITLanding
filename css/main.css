@@ -379,3 +379,42 @@ p {
   color: #4985ff;
   transition: 0.3s;
 }
+/* shipment section */
+.shipment {
+  padding-top: 170px;
+  padding-bottom: 85px;
+  text-align: center;
+}
+.mailing__under-title-text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.mailing__form {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.mailing__input {
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgb(111 111 111 / 25%);
+  border-radius: 30px;
+  outline: none;
+  padding: 15px 170px 15px 33px;
+  width: 500px;
+}
+.mailing__input::placeholder {
+  font-size: 13px;
+}
+.mailing__button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px 30px 30px 0px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.mailing__under-form-text {
+  margin-top: 35px;
+}
