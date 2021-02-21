@@ -455,6 +455,13 @@ p {
 .footer-list__internal-item img {
   padding-right: 15px;
 }
+.footer-list__contacts-text {
+  white-space: nowrap;
+}
+.footer-list__contacts-link {
+  white-space: nowrap;
+}
+
 .label {
   padding-top: 115px;
   text-align: center;
