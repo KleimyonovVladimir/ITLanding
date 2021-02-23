@@ -48,6 +48,19 @@ p {
   margin: 0 auto;
 }
 
+.line {
+  position: relative;
+}
+
+.line:after {
+  content: "";
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  position: absolute;
+  bottom: -85px;
+  left: 0;
+}
+
 .header {
   background: url(../img/background.jpg) no-repeat center top/ cover fixed;
   height: 100vh;
@@ -133,65 +146,62 @@ p {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.offer-text {
+.services-description {
   width: 730px;
   margin: 0 auto;
   margin-bottom: 70px;
-}
-
-.services p {
-  color: #999999;
 }
 
 .services ul li p {
   font-size: 14px;
   line-height: 22px;
 }
-.list {
+.services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 35px;
 }
-.list__item {
+.services-list__item {
   display: flex;
   position: relative;
 }
 
-.list__item span:after {
-  left: 8px;
+.services-list__img-wrapper:after,
+.services-list__img-wrapper:before {
   content: "";
-  border: 1px solid #4985ff;
   border-radius: 50%;
+  position: absolute;
+}
+
+.services-list__img-wrapper:after {
+  left: 8px;
+  border: 1px solid #4985ff;
   width: 90px;
   height: 90px;
-  position: absolute;
   top: -5px;
 }
-.list__item span:before {
-  content: "";
+.services-list__img-wrapper:before {
   border: 1px solid #e0e0e0;
-  border-radius: 50%;
   width: 110px;
   height: 110px;
-  position: absolute;
   left: -2px;
   top: -16px;
 }
 
-.list__item span {
+.services-list__img-wrapper {
   padding-left: 32px;
   padding-top: 21px;
 }
-.services-text {
+.services-list__services-text {
   width: 222px;
   margin-left: 45px;
   padding-top: 30px;
 }
 
-.list__item h4 {
-  margin-bottom: 12px;
+.services-list__services-subtext {
+  padding-top: 12px;
 }
-.services a {
+.services-button {
   margin-top: 55px;
 }
 
@@ -207,18 +217,17 @@ p {
   color: #999;
 }
 
-.wrapper {
+.standards-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 70px;
-  position: relative;
 }
-.wrapper__text {
+.standards-intro__text {
   width: 490px;
   padding-top: 52px;
 }
 
-.wrapper__text p {
+.standards-intro__text p {
   padding-top: 40px;
   padding-bottom: 30px;
 }
@@ -228,11 +237,7 @@ p {
   font-weight: 500;
 }
 
-.wrapper:after {
-  content: "";
-  border-bottom: 1px solid #e0e0e0;
-  width: 1110px;
-  position: absolute;
+.standards-intro:after {
   bottom: -90px;
 }
 
@@ -249,7 +254,7 @@ p {
   line-height: 53px;
 }
 
-/* thir demonstration section */
+/* third demonstration section */
 
 .demonstration {
   padding-bottom: 172px;
@@ -269,11 +274,11 @@ p {
   align-items: center;
   padding-top: 100px;
 }
-.our-work h2 {
+.our-work__title {
   color: #fff;
   width: 540px;
 }
-.our-work a {
+.more-list__link {
   height: fit-content;
 }
 .more-list {
@@ -287,7 +292,7 @@ p {
   padding: 30px 0;
 }
 
-.more-list__item span {
+.more-list__number {
   color: #4985ff;
 }
 .more-list__item p {
@@ -295,14 +300,7 @@ p {
   width: 350px;
   padding-bottom: 30px;
 }
-.line:after {
-  content: "";
-  border-bottom: 1px solid #e0e0e0;
-  width: 1110px;
-  position: absolute;
-  bottom: -85px;
-  left: 0;
-}
+
 /* our-project section */
 .our-project {
   text-align: center;
@@ -314,17 +312,17 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-.our-project h2 {
+.our-project__title {
   color: #000;
   display: inline-block;
 }
-.our-project p {
+.our-project__subtitle {
   padding-top: 50px;
   padding-bottom: 70px;
   width: 730px;
   margin: 0 auto;
 }
-.our-project a {
+.our-project__button {
   margin-top: 100px;
 }
 
@@ -367,13 +365,13 @@ p {
   display: flex;
   align-items: center;
 }
-.video__button span {
+.video__img-wrapper {
   padding-right: 21px;
   width: 60px;
   height: 60px;
 }
 
-.video__button span img {
+.video__img-wrapper img {
   width: 58px;
   border: 1px solid #fff;
   border-radius: 50%;
@@ -384,7 +382,7 @@ p {
   color: #4985ff;
   transition: 0.3s;
 }
-.video__button:hover span img {
+.video__button:hover .video__img-wrapper img {
   border-color: #4985ff;
 }
 /* shipment section */
@@ -393,7 +391,7 @@ p {
   padding-bottom: 85px;
   text-align: center;
 }
-.mailing__under-title-text {
+.mailing__subtitle {
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -423,7 +421,7 @@ p {
   right: 0;
   height: 100%;
 }
-.mailing__under-form-text {
+.mailing__privacy-policy {
   margin-top: 35px;
 }
 /* footer */
