@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   padding: 0;
   margin: 0;
@@ -32,7 +35,7 @@ a {
 
 ul,
 li {
-  display: block;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -44,8 +47,9 @@ p {
 }
 
 .container {
-  width: 1110px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .line {
@@ -98,6 +102,9 @@ p {
   position: absolute;
   top: 57px;
 }
+.hamburger {
+  display: none;
+}
 
 .offer {
   text-align: center;
@@ -106,8 +113,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -415px;
-  margin-top: -117px;
+  transform: translate(-50%, -50%);
 }
 
 .offer p {
@@ -159,11 +165,10 @@ p {
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 35px;
+  grid-gap: 25px;
 }
 .services-list__item {
   display: flex;
-  position: relative;
 }
 
 .services-list__img-wrapper:after,
@@ -174,27 +179,37 @@ p {
 }
 
 .services-list__img-wrapper:after {
-  left: 8px;
   border: 1px solid #4985ff;
   width: 90px;
   height: 90px;
-  top: -5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .services-list__img-wrapper:before {
   border: 1px solid #e0e0e0;
   width: 110px;
   height: 110px;
-  left: -2px;
-  top: -16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .services-list__img-wrapper {
-  padding-left: 32px;
-  padding-top: 21px;
+  display: block;
+  width: 112px;
+  position: relative;
+  height: 112px;
+}
+.services-list__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .services-list__services-text {
   width: 222px;
-  margin-left: 45px;
+  margin-left: 5px;
   padding-top: 30px;
 }
 
@@ -246,6 +261,9 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 140px;
   padding-top: 160px;
+}
+.standards-list__project {
+  display: flex;
 }
 .standards-list__item span {
   padding-left: 20px;
@@ -357,8 +375,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -143px;
-  margin-top: -51px;
+  transform: translate(-50%, -50%);
   border: 1px solid #fff;
   border-radius: 200px;
   padding: 20px 29px 20px 40px;
@@ -367,8 +384,6 @@ p {
 }
 .video__img-wrapper {
   padding-right: 21px;
-  width: 60px;
-  height: 60px;
 }
 
 .video__img-wrapper img {
